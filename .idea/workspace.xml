@@ -5,16 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2866dbb-7b24-42ae-841e-5ea845bafc90" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/organisation/eCommerce/pageObjects/CartPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/organisation/eCommerce/pageObjects/ConfirmationPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/organisation/eCommerce/pageObjects/LogoutPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/organisation/eCommerce/pageObjects/PaymentPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/organisation/eCommerce/utils/CommonUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/organisation/eCommerce/base/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/Test.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/organisation/eCommerce/pageObjects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/organisation/eCommerce/pageObjects/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/organisation/eCommerce/pageObjects/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/organisation/eCommerce/pageObjects/CartPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/organisation/eCommerce/pageObjects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/organisation/eCommerce/pageObjects/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/organisation/eCommerce/PlaceOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/organisation/eCommerce/PlaceOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/organisation/eCommerce/pageObjects/PaymentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/organisation/eCommerce/pageObjects/PaymentPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/organisation/eCommerce/utils/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/organisation/eCommerce/utils/CommonUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/drivers/chromedriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/organisation/eCommerce/E2ETest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/organisation/eCommerce/tests/E2ETest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/organisation/eCommerce/IncorrectEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/organisation/eCommerce/tests/IncorrectEmail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/organisation/eCommerce/PlaceOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/organisation/eCommerce/tests/PlaceOrder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +39,9 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2srD6Rb5PYJSpMqMUJAYfg7OnEm" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -45,6 +50,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;Application.E2ETest.executor&quot;: &quot;Run&quot;,
     &quot;Application.IncorrectEmail.executor&quot;: &quot;Run&quot;,
     &quot;Application.PlaceOrder.executor&quot;: &quot;Run&quot;,
@@ -52,6 +58,11 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TestNG.D:/Kranthi/Selenium/SeleniumTestNGFramework/testng.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.IncorrectEmail.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.IncorrectEmail.incorrectEmailValidation.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.IncorrectEmail.incorrectPasswordValidation.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.PlaceOrder.submitProduct.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
@@ -67,20 +78,23 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Kranthi\Selenium\SeleniumTestNGFramework\src\main\resources" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Kranthi\Selenium\SeleniumTestNGFramework\src\drivers" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="organisation.eCommerce.pageObjects" />
       <recent name="organisation.eCommerce" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PlaceOrder">
+  <component name="RunManager" selected="TestNG.D:/Kranthi/Selenium/SeleniumTestNGFramework/testng.xml">
     <configuration name="E2ETest" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="organisation.eCommerce.E2ETest" />
+      <option name="MAIN_CLASS_NAME" value="organisation.eCommerce.tests.E2ETest" />
       <module name="SeleniumTestNGFramework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="organisation.eCommerce.*" />
+          <option name="PATTERN" value="organisation.eCommerce.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,36 +102,94 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IncorrectEmail" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="organisation.eCommerce.IncorrectEmail" />
+    <configuration name="D:/Kranthi/Selenium/SeleniumTestNGFramework/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumTestNGFramework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="organisation.eCommerce.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlaceOrder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="organisation.eCommerce.PlaceOrder" />
+    <configuration name="IncorrectEmail" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumTestNGFramework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="organisation.eCommerce.*" />
+          <option name="PATTERN" value="organisation.eCommerce.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="organisation.eCommerce.tests" />
+      <option name="MAIN_CLASS_NAME" value="organisation.eCommerce.tests.IncorrectEmail" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IncorrectEmail.incorrectEmailValidation" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumTestNGFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="organisation.eCommerce.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="organisation.eCommerce.tests" />
+      <option name="MAIN_CLASS_NAME" value="organisation.eCommerce.tests.IncorrectEmail" />
+      <option name="METHOD_NAME" value="incorrectEmailValidation" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IncorrectEmail.incorrectPasswordValidation" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumTestNGFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="organisation.eCommerce.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="organisation.eCommerce.tests" />
+      <option name="MAIN_CLASS_NAME" value="organisation.eCommerce.tests.IncorrectEmail" />
+      <option name="METHOD_NAME" value="incorrectPasswordValidation" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlaceOrder.submitProduct" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumTestNGFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="organisation.eCommerce.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="organisation.eCommerce.tests" />
+      <option name="MAIN_CLASS_NAME" value="organisation.eCommerce.tests.PlaceOrder" />
+      <option name="METHOD_NAME" value="submitProduct" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PlaceOrder" />
-        <item itemvalue="Application.IncorrectEmail" />
+        <item itemvalue="TestNG.D:/Kranthi/Selenium/SeleniumTestNGFramework/testng.xml" />
+        <item itemvalue="TestNG.IncorrectEmail" />
+        <item itemvalue="TestNG.IncorrectEmail.incorrectPasswordValidation" />
+        <item itemvalue="TestNG.IncorrectEmail.incorrectEmailValidation" />
+        <item itemvalue="TestNG.PlaceOrder.submitProduct" />
       </list>
     </recent_temporary>
   </component>
@@ -132,16 +204,8 @@
     </task>
     <servers />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/organisation/eCommerce/PlaceOrder.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SeleniumTestNGFramework$E2ETest.ic" NAME="E2ETest Coverage Results" MODIFIED="1739207022023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

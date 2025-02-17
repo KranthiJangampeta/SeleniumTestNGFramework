@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="org.testng.reporters.EmailableReporter2"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="D:/Kranthi/Selenium/SeleniumTestNGFramework">
+        <classes>
+            <class name="organisation.eCommerce.tests.IncorrectEmail"></class>
+            <class name="organisation.eCommerce.tests.PlaceOrder"></class>
+        </classes>
+    </test>
+</suite>

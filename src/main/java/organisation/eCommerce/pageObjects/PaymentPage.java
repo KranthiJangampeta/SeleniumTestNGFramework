@@ -33,7 +33,9 @@ public class PaymentPage extends CommonUtils { // forth step
                 option.getText().equalsIgnoreCase(countryName)).findFirst().get().click();
     }
 
-    public void placeOrder() {
+    public ConfirmationPage placeOrder() {
         placeOrder.click();
+        ConfirmationPage confirmationPage = new ConfirmationPage(driver);
+        return confirmationPage;
     }
 }

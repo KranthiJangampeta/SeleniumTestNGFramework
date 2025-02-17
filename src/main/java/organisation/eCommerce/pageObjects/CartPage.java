@@ -36,7 +36,9 @@ public class CartPage extends CommonUtils {
         return matched;
     }
 
-    public void checkOutProduct() {
+    public PaymentPage checkOutProduct() {
         checkOut.click();
+        PaymentPage paymentPage = new PaymentPage(driver);
+        return paymentPage;
     }
 }

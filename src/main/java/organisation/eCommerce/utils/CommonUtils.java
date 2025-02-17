@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import organisation.eCommerce.pageObjects.CartPage;
 
 import java.util.List;
 
@@ -34,9 +35,11 @@ public class CommonUtils {
         wait.until(ExpectedConditions.invisibilityOf(element));
     }
 
-    public void goToCart()
+    public CartPage goToCart()
     {
         cart.click();
+        CartPage cartPage = new CartPage(driver);
+        return cartPage;
     }
 
 }
