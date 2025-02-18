@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import organisation.eCommerce.pageObjects.CartPage;
+import organisation.eCommerce.pageObjects.OrderHistoryPage;
 
 import java.util.List;
 
@@ -23,6 +24,9 @@ public class CommonUtils {
     @FindBy(xpath = "//button[@routerlink='/dashboard/cart']")
     WebElement cart;
 
+    @FindBy(xpath = "//button[@routerlink='/dashboard/myorders']")
+    WebElement orders;
+
     public void waitUntilElementVisible(WebElement element) {
         wait.until(ExpectedConditions.visibilityOf(element));
     }
@@ -34,12 +38,21 @@ public class CommonUtils {
     public void waitUntilElementInVisible(WebElement element) {
         wait.until(ExpectedConditions.invisibilityOf(element));
     }
+    public void waitUntilElementIsClickable(WebElement element){
+        wait.until(ExpectedConditions.elementToBeClickable(element));
+    }
 
     public CartPage goToCart()
     {
+        waitUntilElementIsClickable(cart);
         cart.click();
         CartPage cartPage = new CartPage(driver);
         return cartPage;
     }
 
+    public OrderHistoryPage goToOrders(){
+        orders.click();
+        OrderHistoryPage orderHistoryPageObj = new OrderHistoryPage(driver);
+        return orderHistoryPageObj;
+    }
 }

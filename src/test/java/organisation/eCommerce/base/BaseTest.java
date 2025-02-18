@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.*;
+import organisation.eCommerce.pageObjects.ConfirmationPage;
 import organisation.eCommerce.pageObjects.LoginPage;
 
 import java.io.FileInputStream;
@@ -16,6 +17,7 @@ import java.util.concurrent.TimeUnit;
 public class BaseTest {
     public WebDriver driver;
     public LoginPage loginPage;
+    public ConfirmationPage confirmationPage;
 
     //@BeforeSuite
     public void driverInitialization() throws IOException {
@@ -45,6 +47,7 @@ public class BaseTest {
     public void launchURL() throws IOException {
         driverInitialization();
         loginPage = new LoginPage(driver);
+        confirmationPage = new ConfirmationPage(driver);
         loginPage.launchUrl();
     }
 

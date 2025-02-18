@@ -24,6 +24,9 @@ public class HomePage extends CommonUtils {
     List<WebElement> addToCart;
     @FindBy(xpath = "//div[contains(@class,'toast-success')]")
     WebElement productAddedConfirmation;
+
+    @FindBy(xpath = "//div[contains(@class,'ngx-spinner-overlay')]")
+     WebElement spinner;
     By productText = By.tagName("b");
 
     public List<WebElement> getProductsList() {
@@ -39,6 +42,7 @@ public class HomePage extends CommonUtils {
             if (productName.contains(inputName)) {
                 //getProductsList().get(i).addToCart.get(i).click();
                 addToCart.get(i).click();
+                //waitUntilElementInVisible(spinner);
                 waitUntilElementVisible(productAddedConfirmation);
             }
         }

@@ -17,8 +17,16 @@ public class ConfirmationPage extends CommonUtils {
 
     @FindBy(className = "hero-primary")
     WebElement successMessage;
+    @FindBy(xpath = "//label[text()=' Orders History Page ']")
+    WebElement orderHistoryPage;
 
     public String getCofirmationMessage() {
         return successMessage.getText().trim().toLowerCase();
+    }
+    public OrderHistoryPage goToOrderHistoryPage() {
+        waitUntilElementVisible(orderHistoryPage);
+        orderHistoryPage.click();
+        OrderHistoryPage orderHistoryPageObj = new OrderHistoryPage(driver);
+        return orderHistoryPageObj;
     }
 }
