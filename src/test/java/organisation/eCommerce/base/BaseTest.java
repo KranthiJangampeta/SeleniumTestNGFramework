@@ -11,10 +11,11 @@ import organisation.eCommerce.pageObjects.LoginPage;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.Date;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-public class BaseTest {
+public class BaseTest extends DataReader {
     public WebDriver driver;
     public LoginPage loginPage;
     public ConfirmationPage confirmationPage;

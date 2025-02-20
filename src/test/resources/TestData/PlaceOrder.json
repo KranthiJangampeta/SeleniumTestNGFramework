@@ -1,0 +1,17 @@
+[
+  {
+    "email": "Selenium.user@gmail.com",
+    "password": "Password@123",
+    "product": "ADIDAS ORIGINAL"
+  },
+  {
+    "email": "Selenium.user1@gmail.com",
+    "password": "Password@123",
+    "product": "ZARA COAT 3"
+  },
+  {
+    "email": "Selenium.user2@gmail.com",
+    "password": "Password@123",
+    "product": "ADIDAS ORIGINAL"
+  }
+]
