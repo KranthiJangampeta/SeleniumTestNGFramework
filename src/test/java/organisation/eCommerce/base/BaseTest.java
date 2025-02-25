@@ -1,6 +1,11 @@
 package organisation.eCommerce.base;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -9,9 +14,9 @@ import org.testng.annotations.*;
 import organisation.eCommerce.pageObjects.ConfirmationPage;
 import organisation.eCommerce.pageObjects.LoginPage;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.Date;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -56,5 +61,33 @@ public class BaseTest extends DataReader {
     public void tearDown() throws InterruptedException {
         driver.close();
         Thread.sleep(5000);
+    }
+
+
+    public ExtentReports extentReportConfiguration() {
+        ExtentReports extentReportObj;
+        String path = System.getProperty("user.dir") + "/extentReports/index.html";
+        ExtentSparkReporter reporter = new ExtentSparkReporter(path);
+        reporter.config().setReportName("Regression results");
+        reporter.config().setDocumentTitle("Air India");
+
+        extentReportObj = new ExtentReports();
+        extentReportObj.attachReporter(reporter);
+        extentReportObj.setSystemInfo("Tester", "Lokesh");
+        return extentReportObj;
+    }
+
+    public void takeScreenshot(WebDriver driver, String testCaseName ){
+
+        TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
+
+        File src = takesScreenshot.getScreenshotAs(OutputType.FILE);
+        String path = System.getProperty("user.dir") + "/extentReports/" + testCaseName + ".png";
+        File dst = new File(path);
+        try {
+            FileUtils.copyFile(src, dst);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

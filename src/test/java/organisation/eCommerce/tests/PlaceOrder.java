@@ -44,7 +44,7 @@ public class PlaceOrder extends BaseTest {
 
     @DataProvider
     public Object[][] getDataForSubmitProduct() throws IOException {
-        List<HashMap<String, String>> data = getJsonDataToMap();
+        List<HashMap<String, String>> data = getJsonDataToMap("PlaceOrder");
         Object[][] obj = new Object[][]{{data.get(0)}, {data.get(1)}, {data.get(2)}};
         return obj;
     }

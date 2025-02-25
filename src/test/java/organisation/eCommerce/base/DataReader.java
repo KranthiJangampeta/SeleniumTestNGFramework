@@ -10,9 +10,9 @@ import java.util.HashMap;
 import java.util.List;
 
 public class DataReader {
-    public List<HashMap<String, String>> getJsonDataToMap() throws IOException {
+    public List<HashMap<String, String>> getJsonDataToMap(String jsonFileName) throws IOException {
         // read json file as string
-        File placeOrder = new File(System.getProperty("user.dir") + "/src/test/resources/TestData/PlaceOrder.json");
+        File placeOrder = new File(System.getProperty("user.dir") + "/src/test/resources/TestData/" + jsonFileName + ".json");
         String jsonString = FileUtils.readFileToString(placeOrder);
         ObjectMapper mapper = new ObjectMapper();
         TypeReference<List<HashMap<String, String>>> outputType = new TypeReference<List<HashMap<String, String>>>() {

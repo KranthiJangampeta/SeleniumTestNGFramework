@@ -37,6 +37,7 @@ public class LoginPage extends CommonUtils {
     }
 
     public String getLoginErrorMessage(){
+        waitUntilElementVisible(incorrectLoginCredential);
      return incorrectLoginCredential.getText();
     }
 }

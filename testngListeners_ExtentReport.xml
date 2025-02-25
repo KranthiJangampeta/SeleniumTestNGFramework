@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--
+<suite name="All Test Suite" parallel="methods" thread-count="4">
+-->
+<suite name="All Test Suite" parallel = "methods" thread-count="6">
+    <listeners>
+        <listener class-name="organisation.eCommerce.base.Listeners"/>
+    </listeners>
+    <test name="Extent Reports">
+        <classes>
+            <class name="organisation.eCommerce.tests.IncorrectEmail"></class>
+            <class name="organisation.eCommerce.tests.PlaceOrder"></class>
+        </classes>
+    </test>
+</suite>
